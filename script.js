@@ -124,7 +124,7 @@ function loadQuiz(){
   let selected = userSelected[currentQtn];
   document.getElementById(selected).checked = true
  }
- if(currentQtn == quizData.length-1){
+ if(currentQtn == quizData.length - 1){
   nextBtn.style.display = "none";
   submitBtn.style.display = "block";
  }
