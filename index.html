@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>QUIZ APP</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="start_btn" id="start_btn">
+  <button onclick="Start()">Start Quiz</button>
+ </div>
+ <div class="info_box" id="box">
+  <div class="info_title">
+   <span>Some Rules of this Quiz</span>
+  </div>
+  <div class="info_list">
+   <div class="info">1. You will have only 15 seconds per each question</div>
+   <div class="info">2. Once you select your answer, you can`t reselect</div>
+   <div class="info">3. You can`t select any option once time goes off</div>
+   <div class="info">4. You can`t select any option once time goes off</div>
+   <div class="info">5. You can`t select any option once time goes off</div>
+  </div>
+  <div class="buttons">
+  <button onclick="exit()" class="exit">Exit Quiz</button>
+  <button onclick="restart()" class="restart" id="continue">Continue</button>
+  </div>
+ </div>
+ <div class="quiz-container" id="quiz">
+    <div class="header">
+    <h1>Javascript Question</h1>
+    <div id="timer"></div>
+    </div>
+   <div class="quiz-header">
+    <h2 id="question">first question</h2>
+    <ul>
+     <li>
+      <input type="radio" name="answer" id="a" class="answer">
+      <label for="a" class="op_label" id="a_text">option1</label>
+     </li>
+     <li>
+      <input type="radio" name="answer" id="b" class="answer">
+      <label for="b" class="op_label" id="b_text">option1</label>
+     </li>
+     <li>
+      <input type="radio" name="answer" id="c" class="answer">
+      <label for="c" class="op_label" id="c_text">option1</label>
+     </li>
+     <li>
+      <input type="radio" name="answer" id="d" class="answer">
+      <label for="d" class="op_label" id="d_text">option1</label>
+     </li>
+    </ul>
+   </div>
+   <div class="action-btn">
+    <button id="previous">Previous</button>
+    <button id="next">Next</button>
+    <button id="submit">Submit</button>
+   </div>
+ </div>
+ <div class="result-container" id="result">
+  <h2 id="score"></h2>
+  <div class="action-btn">
+    <button id="try" onclick="location.reload()">Try Again</button>
+    <button id="show">Show Answer</button>
+  </div>
+ </div>
+ <script src="./script.js"></script>
+</body>
+</html>
